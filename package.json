@@ -1,5 +1,5 @@
 {
-  "name": "evf-build-consumer-test",
+  "name": "keg-test-consumer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,9 +8,11 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "sessions": "file://Users/michael.carolin/keg/tap-events-force/build"
   },
   "scripts": {
+    "clean": "rm -rf node_modules && rm yarn.lock",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
