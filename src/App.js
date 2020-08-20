@@ -1,32 +1,9 @@
-import React from 'react';
-// import logo from './logo.svg';
-import Sessions from 'sessions'
-
-import './App.css';
-
-console.log({ Sessions })
+import React from 'react'
+import Sessions from '@simpleviewinc/tap-events-force'
+// For CJS: import Sessions from '@simpleviewinc/tap-events-force/keg-sessions.cjs'
 
 function App() {
-  return (
-    // <div>Foo</div>
-    <Sessions />
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+  return <Sessions />
 }
 
 export default App;
