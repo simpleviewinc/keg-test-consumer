@@ -1,7 +1,6 @@
 {
   "name": "keg-test-consumer",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -9,7 +8,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "@simpleviewinc/tap-events-force": "0.0.1"
+    "@keg-hub/tap-evf-sessions": "0.0.1"
   },
   "scripts": {
     "clean": "rm -rf node_modules && rm yarn.lock",
