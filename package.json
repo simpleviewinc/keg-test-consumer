@@ -1,6 +1,14 @@
 {
   "name": "keg-test-consumer",
   "version": "0.1.0",
+  "scripts": {
+    "clean:full": "rm -rf node_modules && rm yarn.lock && yarn install",
+    "start": "PORT=3000 react-scripts start",
+    "start:dev": "nodemon --watch './node_modules/@keg-hub/tap-evf-sessions' --exec 'yarn start'", 
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,13 +18,8 @@
     "react-scripts": "3.4.3",
     "@keg-hub/tap-evf-sessions": "0.0.4"
   },
-  "scripts": {
-    "clean:full": "rm -rf node_modules && rm yarn.lock && yarn install",
-    "start": "PORT=3000 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "copy:build": "bash ./scripts/copyBuild.sh"
+  "devDependencies": {
+    "nodemon": "2.0.4"
   },
   "eslintConfig": {
     "extends": "react-app"
