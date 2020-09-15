@@ -15,7 +15,7 @@ Simple app for testing out keg builds in a consumer environment. Made with creat
     place it inside of the consumer's `/keg/app/node_modules/@keg-hub/tap-evf-sessions` 
 3. `keg consumer att`
   * attach to the consumer container
-4. `yarn start:dev`
-  * starts the react app, but also restarts the app if any changes to the sessions component build are detected
+4. `yarn start`
+  * starts the react app, with hot-reloading reacting to new builds
 
 > Note: when following these instructions, replace `consumer` and `evf` with your local keg-cli link aliases for keg-test-consumer and tap-events-force respectively
