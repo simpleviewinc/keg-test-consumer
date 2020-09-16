@@ -1,8 +1,4 @@
 #!/usr/bin/env
-
-export SUPPRESS_SUPPORT=1
-export KEG_CONSUMER_BUILD_PATH=/keg/app/@keg-hub/
-
 APP_PATH=/keg/app
 
 # If DOC_APP_PATH env is passed override the default app path
@@ -48,4 +44,8 @@ keg_run_the_app(){
 if [[ -z "$KEG_DOCKER_EXEC" ]]; then
   tail -f /dev/null
   exit 0
+else
+  keg_run_app_yarn_setup
+  keg_run_the_app
 fi
+
