@@ -5,7 +5,7 @@ import testData from './mocks/testData'
 function App() {
   return <Sessions 
     disableDemo={false} 
-    {...testData} 
+    sessionAgendaProps={testData} 
   />
 }
 
