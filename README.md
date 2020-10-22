@@ -1,5 +1,8 @@
 # Overview
-Simple app for testing out keg builds in a consumer environment. Made with create-react-app.
+
+Simple app for testing out tap-events-force tap in a consumer environment. Made with create-react-app.
+
+[Live Demo](https://simpleviewinc.github.io/keg-test-consumer/)
 
 Go to [App.js](https://github.com/simpleviewinc/keg-test-consumer/blob/master/src/App.js) to see the source code that calls the `tap-evf-sessions` component.
 

@@ -1,4 +1,3 @@
-/** labels */
 .ef-agenda-label-201 {
   background-color: coral;
 }
@@ -28,7 +27,6 @@
   background-color: orange;
 }
 
-/** sessions */
 .ef-session-time-text {
   font-size: 2em;
   color: coral;
