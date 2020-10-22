@@ -1,6 +1,8 @@
 # Overview
 Simple app for testing out keg builds in a consumer environment. Made with create-react-app.
 
+Go to [App.js](https://github.com/simpleviewinc/keg-test-consumer/blob/master/src/App.js) to see the source code that calls the `tap-evf-sessions` component.
+
 ## Usage
 
 ### Testing the `tap-evf-sessions` package from NPM
