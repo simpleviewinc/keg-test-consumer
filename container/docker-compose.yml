@@ -12,7 +12,7 @@ services:
       dockerfile: ${KEG_DOCKER_FILE}
       args:
         - DOC_APP_PATH
-        - DOC_APP_PORT
+        - KEG_PROXY_PORT
         - DOC_CORE_PATH
         - DOC_COMPONENTS_PATH
         - DOC_RESOLVER_PATH
@@ -24,7 +24,7 @@ services:
     container_name: ${CONTAINER_NAME}
     environment:
       - DOC_APP_PATH
-      - DOC_APP_PORT
+      - KEG_PROXY_PORT
       - ENV
       - KEG_EXEC_CMD
       - KEG_DOCKER_EXEC
@@ -37,6 +37,3 @@ services:
       - DOC_JSUTILS_PAT
       - DOC_EVF_PATH
       - NODE_ENV
-    ports:
-      - 80:${DOC_APP_PORT}
-      - ${DOC_APP_PORT}:${DOC_APP_PORT}
