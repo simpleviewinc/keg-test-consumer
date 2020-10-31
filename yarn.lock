@@ -1424,10 +1424,10 @@
   resolved "https://registry.yarnpkg.com/@keg-hub/jsutils/-/jsutils-6.2.1.tgz#0d9dbf562e313eb7690d36a2b8e9147b1e08d52a"
   integrity sha512-aCZ86nB+f6awWbDIPd6VPaePQjm8AYNXvGrwe2Ip06F6oVJZ7tiOIBwFHeK/gAKqmw1wnxl4B0z21vQeINd6dw==
 
-"@keg-hub/tap-evf-sessions@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-1.3.0.tgz#e0c32a9ba303256fe9f586590d84d65b73babf54"
-  integrity sha512-vRX5S8TNbBrlM2rB0hcA348/zb89W14qWP/oh2Lt4KyhKrKDeD4lR9kvxnLiLx+2L1xYW9dMIsw7wAiTJrWK/g==
+"@keg-hub/tap-evf-sessions@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-1.3.1.tgz#48b2534b10f76556cba82f9cc7a61ac2b6f55385"
+  integrity sha512-/yfYVcBTTCMnx3VkFFdmP+SyV3jq4sCaPrLWZD2XmyBeEjSHWrw/x6ybsgk2qx3p/yWZZ85Uddc5JsA8vBKLTg==
   dependencies:
     "@keg-hub/jsutils" "6.2.1"
     axios "0.19.2"
