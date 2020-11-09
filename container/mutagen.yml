@@ -49,15 +49,21 @@ actions:
         - bash
   jsutils:
     install:
-      location: /keg/app/node_modules/@keg-hub/jsutils
+      location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
       privileged: true
       cmds:
         - yarn install
     start:
-      location: /keg/app/node_modules/@keg-hub/jsutils
+      location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
       privileged: true
       cmds:
         - yarn dev
+    copy:
+      location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
+      privileged: true
+      cmds:
+        - rm -rf /keg/app/node_modules/@keg-hub/jsutils/build
+        - cp -R /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils/build /keg/app/node_modules/@keg-hub/jsutils/build
   retheme:
     install:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
