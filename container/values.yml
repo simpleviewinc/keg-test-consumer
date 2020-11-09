@@ -1,5 +1,10 @@
 env:
 
+  # --- LOCAL ENV CONTEXT --- #
+  CORE_PATH: "{{ cli.taps.links.core }}"
+  COMPONENTS_PATH: "{{ cli.paths.components }}"
+  RETHEME_PATH: "{{ cli.taps.links.retheme }}"
+
   # --- KEG-CLI ENV CONTEXT --- #
 
   # Set the paths to the linked external app
