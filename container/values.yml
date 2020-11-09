@@ -46,3 +46,4 @@ env:
   # where to place the build output
   KEG_CONSUMER_BUILD_PATH: /keg/app/node_modules/@keg-hub/tap-evf-sessions
   KEG_FROM_BASE: false
+  KEG_EXEC_CMD: start

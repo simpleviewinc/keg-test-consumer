@@ -34,7 +34,10 @@ keg_run_the_app(){
 
   cd $APP_PATH
 
-  KEG_EXEC_CMD="start"
+  if [[ -z "$KEG_EXEC_CMD" ]]; then
+    KEG_EXEC_CMD="start"
+  fi
+
   keg_message "Running command 'yarn $KEG_EXEC_CMD'"
   yarn $KEG_EXEC_CMD
 }
