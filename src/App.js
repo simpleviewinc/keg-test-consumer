@@ -3,6 +3,8 @@ import Sessions from '@keg-hub/tap-evf-sessions'
 import testData from './mocks/testData'
 import { evfModalBuilder } from './mocks/evfModalBuilder'
 
+import "bootstrap/dist/css/bootstrap.min.css"
+
 const onBookingRequest = (sessionId, ids) => {
   console.log('Booking request for session ', sessionId, 'with attendees: ', ids)
 }
