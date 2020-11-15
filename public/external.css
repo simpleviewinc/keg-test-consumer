@@ -31,3 +31,11 @@
   font-size: 2em;
   color: coral;
 }
+
+.keg-view .keg-view .ef-action-button-primary {
+  background-color: blueviolet;
+}
+
+.keg-view .ef-session-name {
+  color:springgreen
+}
