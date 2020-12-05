@@ -36,6 +36,11 @@ actions:
       privileged: true
       cmds:
         - yarn dev
+    att:
+      location: /keg/tap
+      privileged: true
+      cmds:
+        - bash
   core:
     install:
       location: /keg/tap/node_modules/keg-core
