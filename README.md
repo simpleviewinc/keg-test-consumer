@@ -18,9 +18,16 @@ Go to [App.js](https://github.com/simpleviewinc/keg-test-consumer/blob/master/sr
 2. `keg consumer sync evf:install:start`
   * syncs your local tap-events-force into the container at `/keg/tap`, then starts the build server, which will rebuild the sessions component whenever a change is detected. It will automatically
     place it inside of the consumer's `/keg/app/node_modules/@keg-hub/tap-evf-sessions` 
-3. `keg consumer att`
-  * attach to the consumer container
-4. `yarn start`
-  * starts the react app, with hot-reloading reacting to new builds
+
 
 > Note: when following these instructions, replace `consumer` and `evf` with your local keg-cli link aliases for keg-test-consumer and tap-events-force respectively
+
+### Running Production locally (with sync)
+* ensure running container from the instructions above
+* run `yarn docker:build:evf`
+* `yarn build:local`
+* `yarn run:local`
+
+### Running Production locally (no sync)
+* `yarn build:local`
+* `yarn run:local`
