@@ -17,7 +17,7 @@ env:
 
   # The KEG_CONTEXT_PATH env should be the location of the external app being run
   KEG_CONTEXT_PATH: "{{ cli.taps.links.consumer }}"
-
+  KEG_IMAGE_FROM: docker.pkg.github.com/simpleviewinc/keg-packages/keg-test-consumer:develop
 
   # --- GIT ENV CONTEXT --- #
 

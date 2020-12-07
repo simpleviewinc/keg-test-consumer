@@ -11,7 +11,7 @@ RUN yarn global add npm-run-all
 
 # Path of the app within the docker container
 ARG DOC_APP_PATH=${DOC_APP_PATH:-/keg/app}
-ARG DOC_APP_PORT=${DOC_APP_PORT:-5000}
+ARG KEG_PROXY_PORT=${KEG_PROXY_PORT:-3000}
 
 # Copy over the app to a temp directory
 COPY . $DOC_APP_PATH
@@ -32,9 +32,7 @@ RUN apk add --no-cache git bash sudo; \
 ENV PATH=$PATH:/usr/local/share/.config/yarn/global/node_modules/.bin
 
 # Expose container ports
-EXPOSE 80
-EXPOSE 443
-EXPOSE $DOC_APP_PORT
+EXPOSE $KEG_PROXY_PORT
 
 # Set the current directory to tap repo
 WORKDIR $DOC_APP_PATH

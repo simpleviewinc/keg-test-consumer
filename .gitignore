@@ -10,6 +10,7 @@
 
 # production
 /build
+/sessionsBuild
 
 # misc
 .DS_Store
