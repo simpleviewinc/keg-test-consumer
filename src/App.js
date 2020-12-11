@@ -7,10 +7,12 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 const onBookingRequest = (sessionId, ids) => {
   console.log('Booking request for session ', sessionId, 'with attendees: ', ids)
+  return new Promise(resolve => setTimeout(resolve, 1000))
 }
 
 const onWaitingRequest = (sessionId, ids) => {
   console.log('Booking request for session ', sessionId, 'with attendees: ', ids)
+  return new Promise(resolve => setTimeout(resolve, 1000))
 }
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
   }, [modalParentProps])
 
   return <Sessions 
+    disableDemo={false}
     onSessionBookingRequest={onBookingRequest}
     onSessionWaitingListRequest={onWaitingRequest}
     sessionAgendaProps={testData} 
