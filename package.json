@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "homepage": "https://simpleviewinc.github.io/keg-test-consumer",
   "scripts": {
+    "docker:build:consumer": "bash ./scripts/dockerConsumerBuild.sh",
+    "docker:build:evf": "bash ./scripts/dockerEVFBuild.sh",
     "clean:full": "rm -rf node_modules && rm yarn.lock && yarn install",
     "start": "REACT_APP_FOO=5 PORT=3000 react-app-rewired start",
     "build": "react-app-rewired build",
+    "build:local": "GENERATE_SOURCEMAP=true PUBLIC_URL=/ react-app-rewired build",
     "deploy": "yarn build && gh-pages -d build",
+    "run:local": "cd build && serve .",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
@@ -24,7 +28,8 @@
   },
   "devDependencies": {
     "nodemon": "2.0.4",
-    "react-app-rewired": "^2.1.6"
+    "react-app-rewired": "^2.1.6",
+    "serve": "^11.3.2"
   },
   "eslintConfig": {
     "extends": ""

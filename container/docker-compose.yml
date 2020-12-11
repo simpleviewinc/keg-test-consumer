@@ -1,9 +1,6 @@
 version: "3.8"
 services:
   keg-test-consumer:
-    image: ${IMAGE}
-    tty: true
-    stdin_open: true
     privileged: true
     volumes:
       - ${CLI_PATH}:${DOC_CLI_PATH}
@@ -12,6 +9,7 @@ services:
       dockerfile: ${KEG_DOCKER_FILE}
       args:
         - DOC_APP_PATH
+        - KEG_NODE_VERSION
         - KEG_PROXY_PORT
         - DOC_CORE_PATH
         - DOC_COMPONENTS_PATH
