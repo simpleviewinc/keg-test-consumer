@@ -23,7 +23,7 @@ function App() {
   }, [modalParentProps])
 
   return <Sessions 
-    disableDemo={false}
+    showVersion={true}
     onSessionBookingRequest={onBookingRequest}
     onSessionWaitingListRequest={onWaitingRequest}
     sessionAgendaProps={testData} 
