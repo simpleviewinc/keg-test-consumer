@@ -1373,10 +1373,10 @@
   resolved "https://registry.npmjs.org/@keg-hub/jsutils/-/jsutils-8.0.0.tgz#740e05e10128be53d2ffea72a6c8990b57745679"
   integrity sha512-omgYOX0p9H6GsQQ5onEJK56pUI/z1CoblFqjWy/SpwANwsuqEFEG3EKDdcRwwpLjaEl8qQWQzfQ1Z6Pc+OOgqQ==
 
-"@keg-hub/tap-evf-sessions@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-2.1.1.tgz#14bca28cb8afdbeee0595a072a25dd1f1abf2288"
-  integrity sha512-iJyawZG/miVISN4O3xkqEJJLGOyj4yf2hAzkzlIuIGGfi57uM/emD1jQjU3cE8eTKDre/pYnWYpevZv8C6Hquw==
+"@keg-hub/tap-evf-sessions@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-2.3.0.tgz#f2360c12f271a89f73ccf0dd378cd342cd2548f7"
+  integrity sha512-TcAHn5BZl+Mm22zwC7Tjz3OIvpHJJCES1C1OoZU8WBdEOuCnzeHODL9aF+XJdOOZgLbwrcrL/Rrf2PDdeTzaFQ==
   dependencies:
     "@keg-hub/jsutils" "8.0.0"
     prop-types "15.7.2"
