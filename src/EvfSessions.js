@@ -26,7 +26,7 @@ export const EvfSessions = props => {
   const bookingRequest = useCallback((sessionId, ids) => {
     rga4.event({
       name: 'booking_request',
-      session_id: sessionId,
+      session: sessionId,
       ids: ids,
     })
     return onBookingRequest(sessionId, ids)
@@ -35,7 +35,7 @@ export const EvfSessions = props => {
   const waitingRequest = useCallback((sessionId, ids) => {
     rga4.event({
       name: 'waiting_request',
-      session_id: sessionId,
+      session: sessionId,
       ids: ids,
     })
     return onWaitingRequest(sessionId, ids)
