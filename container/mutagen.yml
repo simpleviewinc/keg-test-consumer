@@ -125,22 +125,22 @@ actions:
         - bash
   rga:
     install:
-      location: /keg/app/node_modules/@ltipton/rga4
+      location: /keg/app/node_modules/@keg-hub/rga4
       privileged: true
       cmds:
         - yarn install
     build:
-      location: /keg/app/node_modules/@ltipton/rga4
+      location: /keg/app/node_modules/@keg-hub/rga4
       privileged: true
       cmds:
         - yarn build
     run:
-      location: /keg/app/node_modules/@ltipton/rga4
+      location: /keg/app/node_modules/@keg-hub/rga4
       privileged: true
       cmds:
         - yarn dev
     att:
-      location: /keg/app/node_modules/@ltipton/rga4
+      location: /keg/app/node_modules/@keg-hub/rga4
       privileged: true
       cmds:
         - bash

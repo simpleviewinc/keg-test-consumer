@@ -17,8 +17,7 @@ const overrideDevServer = (reactConfigFunction) => {
       aggregateTimeout: 200,
       poll: process.env.KEG_CONSUMER_BUILD_PATH ? 1000 : false,
       ignored: [
-        /node_modules([\\]+|\/)+(?!(@keg-hub|@ltipton))/,
-        /\@ltipton([\\]+|\/)node_modules/,
+        /node_modules([\\]+|\/)+(?!@keg-hub)/,
         /\@keg-hub\/.*([\\]+|\/)node_modules/,
       ]
     }
@@ -26,8 +25,7 @@ const overrideDevServer = (reactConfigFunction) => {
     // for hot reloading node_modules/@keg-hub/** */
     config.contentBase = [
       config.contentBase,
-      path.join(__dirname, 'node_modules', '@keg-hub'),
-      path.join(__dirname, 'node_modules', '@ltipton')
+      path.join(__dirname, 'node_modules', '@keg-hub')
     ]
 
     return config
@@ -43,7 +41,7 @@ const overrideWebpack = (config, env) => {
       alias: {
         ...config.resolve.alias,
         react: path.join(__dirname, `node_modules/react`),
-        '@ltipton/rga4': path.join(__dirname, `node_modules/@ltipton/rga4/build/rga4.esm.js`),
+        '@keg-hub/rga4': path.join(__dirname, `node_modules/@keg-hub/rga4/build/rga4.esm.js`),
       },
     }
   }

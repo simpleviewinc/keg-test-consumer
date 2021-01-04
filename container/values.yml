@@ -35,7 +35,7 @@ env:
   DOC_RETHEME_PATH: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
   DOC_RESOLVER_PATH: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/tap-resolver
   DOC_JSUTILS_PATH: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
-  DOC_RGA_PATH: /keg/app/node_modules/@ltipton/rga4
+  DOC_RGA_PATH: /keg/app/node_modules/@keg-hub/rga4
 
   # Default port of the app to expose from the container
   KEG_PROXY_PORT: 3000

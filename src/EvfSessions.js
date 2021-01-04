@@ -2,7 +2,7 @@ import React, {useState, useMemo, useCallback} from 'react'
 import Sessions from '@keg-hub/tap-evf-sessions'
 import testData from './mocks/testData'
 import { evfModalBuilder } from './mocks/evfModalBuilder'
-import { useRGA4 } from '@ltipton/rga4'
+import { useRGA4 } from '@keg-hub/rga4'
 
 const onBookingRequest = (sessionId, ids) => {
   console.log('Booking request for session ', sessionId, 'with attendees: ', ids)

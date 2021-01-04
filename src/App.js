@@ -1,5 +1,5 @@
 import React from 'react'
-import { RGA4Provider } from '@ltipton/rga4'
+import { RGA4Provider } from '@keg-hub/rga4'
 import { EvfSessions } from './EvfSessions'
 
 import "bootstrap/dist/css/bootstrap.min.css"
