@@ -42,7 +42,7 @@ export const EvfSessions = props => {
   }, [rga4])
 
   return <Sessions 
-    disableDemo={false}
+    showVersion={true}
     onSessionBookingRequest={bookingRequest}
     onSessionWaitingListRequest={waitingRequest}
     sessionAgendaProps={testData} 
