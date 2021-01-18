@@ -176,7 +176,7 @@ export default {
     },
     {
       allowBooking: true,
-      identifier: '3a',
+      identifier: '13',
       name: 'Session on day 2, limited capacity, no waiting list',
       summary: '',
       dayNumber: 2,
@@ -190,7 +190,7 @@ export default {
       restrictToAttendeeCategories: [ '1', '2' ],
       capacity: {
         isUnlimited: false,
-        remainingPlaces: 3,
+        remainingPlaces: 0,
         isWaitingListAvailable: false,
       },
     },
@@ -407,8 +407,8 @@ export default {
       bookedTicketIdentifier: '4',
       name: 'Pepe Silvia',
       attendeeCategoryIdentifier: '1',
-      bookedDays: [],
-      bookedSessions: [],
+      bookedDays: [ 2 ],
+      bookedSessions: [ '13' ],
     },
     {
       bookedTicketIdentifier: '5',

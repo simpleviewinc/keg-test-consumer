@@ -28,6 +28,7 @@ function App() {
     onSessionWaitingListRequest={onWaitingRequest}
     sessionAgendaProps={testData} 
     ModalComponent={SessionsModal}
+    showVersion={true}
   />
 }
 
