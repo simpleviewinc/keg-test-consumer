@@ -18,6 +18,10 @@ export default {
       dayNumber: 3,
       date: '2020-07-19',
     },
+    {
+      dayNumber: 4,
+      date: '2020-07-20',
+    },
   ],
   settings: {
     showLocationInAgenda: true,

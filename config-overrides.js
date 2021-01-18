@@ -17,7 +17,8 @@ const overrideDevServer = (reactConfigFunction) => {
       aggregateTimeout: 200,
       poll: process.env.KEG_CONSUMER_BUILD_PATH ? 1000 : false,
       ignored: [
-        /node_modules([\\]+|\/)+(?!@keg-hub)/, 
+        /node_modules([\\]+|\/)+(?!@keg-hub)/,
+        /\@keg-hub\/.*([\\]+|\/)node_modules/,
       ]
     }
 
@@ -31,6 +32,22 @@ const overrideDevServer = (reactConfigFunction) => {
   }
 }
 
+
+const overrideWebpack = (config, env) => {
+  return {
+    ...config,
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        react: path.join(__dirname, `node_modules/react`),
+        '@keg-hub/rga4': path.join(__dirname, `node_modules/@keg-hub/rga4/build/rga4.esm.js`),
+      },
+    }
+  }
+}
+
 module.exports = {
+  webpack: overrideWebpack,
   devServer: overrideDevServer
 }
