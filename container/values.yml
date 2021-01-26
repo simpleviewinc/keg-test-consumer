@@ -1,5 +1,3 @@
-start: /bin/bash /keg/keg-cli/containers/tap/run.sh
-
 env:
 
   # --- LOCAL ENV CONTEXT --- #
@@ -12,15 +10,15 @@ env:
   # --- KEG-CLI ENV CONTEXT --- #
 
   # Docker / Docker Compose paths
-  KEG_DOCKER_FILE: "{{ cli.taps.links.consumer }}/container/Dockerfile"
-  KEG_VALUES_FILE: "{{ cli.taps.links.consumer }}/container/values.yml"
+  KEG_DOCKER_FILE: "{{ cli.taps.consumer.path }}/container/Dockerfile"
+  KEG_VALUES_FILE: "{{ cli.taps.consumer.path }}/container/values.yml"
 
   # The default docker-compose file path
-  KEG_COMPOSE_DEFAULT: "{{ cli.taps.links.consumer }}/container/docker-compose.yml"
+  KEG_COMPOSE_DEFAULT: "{{ cli.taps.consumer.path }}/container/docker-compose.yml"
 
   # The KEG_CONTEXT_PATH env should be the location of the tap being run
   # So it should NOT be set inside the .env file
-  KEG_CONTEXT_PATH: "{{ cli.taps.links.consumer }}"
+  KEG_CONTEXT_PATH: "{{ cli.taps.consumer.path }}"
   
   # Image to use when building consumer
   KEG_BASE_IMAGE: ghcr.io/simpleviewinc/tap:master
@@ -51,7 +49,6 @@ env:
   IMAGE: keg-test-consumer
   CONTAINER_NAME: keg-test-consumer
   VERSION: "0.0.1"
-  CHOKIDAR_USEPOLLING: 1
 
   # --- KEG TEST CONSUMER ENVs --- #
   # taps can check this environment variable to determine

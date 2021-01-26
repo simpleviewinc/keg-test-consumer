@@ -23,126 +23,103 @@ actions:
   evf:
     install: 
       location: /keg/tap
-      privileged: true
       cmds:
         - yarn install
     build:
       location: /keg/tap
-      privileged: true
       cmds:
         - yarn build
     start:
       location: /keg/tap
-      privileged: true
       detach: true
       cmds:
         - yarn dev
     att:
       location: /keg/tap
-      privileged: true
       cmds:
         - bash
   core:
     install:
       location: /keg/tap/node_modules/keg-core
-      privileged: true
       cmds:
         - yarn install
     att:
       location: /keg/tap/node_modules/keg-core
-      privileged: true
       cmds:
         - bash
   jsutils:
     install:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
-      privileged: true
       cmds:
         - yarn install
     start:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
-      privileged: true
       detach: true
       cmds:
         - yarn dev
     copy:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
-      privileged: true
       cmds:
         - rm -rf /keg/app/node_modules/@keg-hub/jsutils/build
         - cp -R /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils/build /keg/app/node_modules/@keg-hub/jsutils/build
   retheme:
     install:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
-      privileged: true
       cmds:
         - yarn install
     build:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
-      privileged: true
       cmds:
         - yarn build
     start:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
-      privileged: true
       detach: true
       cmds:
         - yarn dev
     run:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
-      privileged: true
       cmds:
         - yarn dev
     att:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/re-theme
-      privileged: true
       cmds:
         - bash
   components:
     install:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/keg-components
-      privileged: true
       cmds:
         - yarn install
     build:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/keg-components
-      privileged: true
       cmds:
         - yarn build
     start:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/keg-components
-      privileged: true
       detach: true
       cmds:
         - yarn dev
     run:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/keg-components
-      privileged: true
       cmds:
         - yarn dev
     att:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/keg-components
-      privileged: true
       cmds:
         - bash
   rga:
     install:
       location: /keg/app/node_modules/@keg-hub/rga4
-      privileged: true
       cmds:
         - yarn install
     build:
       location: /keg/app/node_modules/@keg-hub/rga4
-      privileged: true
       cmds:
         - yarn build
     run:
       location: /keg/app/node_modules/@keg-hub/rga4
-      privileged: true
       cmds:
         - yarn dev
     att:
       location: /keg/app/node_modules/@keg-hub/rga4
-      privileged: true
       cmds:
         - bash
