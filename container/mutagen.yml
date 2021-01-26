@@ -1,5 +1,5 @@
 sync:
-  keg-test-consumer:
+  consumer:
     alpha: "/keg/app"
     beta: "docker://tap/keg/app"
     mode: "one-way-replica"
@@ -30,10 +30,11 @@ actions:
       location: /keg/tap
       privileged: true
       cmds:
-        - yarn roll:dev
+        - yarn build
     start:
       location: /keg/tap
       privileged: true
+      detach: true
       cmds:
         - yarn dev
     att:
@@ -61,6 +62,7 @@ actions:
     start:
       location: /keg/tap/node_modules/keg-core/node_modules/@keg-hub/jsutils
       privileged: true
+      detach: true
       cmds:
         - yarn dev
     copy:
