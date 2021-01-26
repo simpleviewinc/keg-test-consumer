@@ -46,8 +46,8 @@ env:
 
   # Image/Container Build information
   # IMAGE and CONTAINER_NAME should be the same
-  IMAGE: keg-test-consumer
-  CONTAINER_NAME: keg-test-consumer
+  IMAGE: consumer
+  CONTAINER_NAME: consumer
   VERSION: "0.0.1"
 
   # --- KEG TEST CONSUMER ENVs --- #

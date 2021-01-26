@@ -1341,10 +1341,10 @@
   resolved "https://registry.yarnpkg.com/@keg-hub/rga4/-/rga4-0.0.3.tgz#1debf6369331e0f97b76cde3ba983d2c37278598"
   integrity sha512-7zLyT5EMUB5uhd7h1D9gjBJEntwePCCOxwXE0G0U4FoyN8Xfaie66Ctyq4zy4Wfbht8twARuuWwrmnO/GUMT3Q==
 
-"@keg-hub/tap-evf-sessions@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-2.4.1.tgz#dedb11eb09beaac8ae297e0a381426dd2ecdc677"
-  integrity sha512-qVRAdxNnMEG0NsmiPeAX5WHtm8XpK4YcGqw+oQGN3TZoEMWOE9UpZdgwWbt+K0Ke7Kdoz+yah55n9aDbuDe3lQ==
+"@keg-hub/tap-evf-sessions@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-2.5.0.tgz#c38a2fc531199bffed71905f60c8285cf69e4caa"
+  integrity sha512-0+uqfC+7o+gpidROFiWQSxb9gDzFFIpTyCI4qTPWkcSRDlJEVHYq51HhkHSt11069Cy3rncxTZg/1vcxrw/YOg==
   dependencies:
     "@keg-hub/jsutils" "8.1.0"
     prop-types "15.7.2"

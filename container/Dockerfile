@@ -1,6 +1,6 @@
 # Path of the tap within the docker container
 ARG DOC_APP_PATH=/keg/tap
-ARG GIT_APP_URL=https://github.com/simpleviewinc/tap-events-force.git
+ARG GIT_APP_URL=https://github.com/simpleviewinc/keg-test-consumer.git
 ARG GIT_APP_BRANCH=master
 # Flag to copy over the taps local folder instead of pulling from git
 ARG KEG_COPY_LOCAL
