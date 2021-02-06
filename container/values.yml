@@ -9,21 +9,22 @@ env:
 
   # --- KEG-CLI ENV CONTEXT --- #
 
-  # Set the paths to the linked external app
-  # The app should be linked to the keg-cli with `kee`
-  # Example command to link the app => `keg tap link kee`
-  KEG_DOCKER_FILE: "{{ cli.taps.links.consumer }}/container/Dockerfile"
-  KEG_VALUES_FILE: "{{ cli.taps.links.consumer }}/container/values.yml"
-  KEG_COMPOSE_DEFAULT: "{{ cli.taps.links.consumer }}/container/docker-compose.yml"
+  # Docker / Docker Compose paths
+  KEG_DOCKER_FILE: "{{ cli.taps.consumer.path }}/container/Dockerfile"
+  KEG_VALUES_FILE: "{{ cli.taps.consumer.path }}/container/values.yml"
 
-  # The KEG_CONTEXT_PATH env should be the location of the external app being run
-  KEG_CONTEXT_PATH: "{{ cli.taps.links.consumer }}"
-  KEG_IMAGE_FROM: docker.pkg.github.com/simpleviewinc/keg-packages/keg-test-consumer:develop
+  # The default docker-compose file path
+  KEG_COMPOSE_DEFAULT: "{{ cli.taps.consumer.path }}/container/docker-compose.yml"
 
-  # --- GIT ENV CONTEXT --- #
+  # The KEG_CONTEXT_PATH env should be the location of the tap being run
+  # So it should NOT be set inside the .env file
+  KEG_CONTEXT_PATH: "{{ cli.taps.consumer.path }}"
+  
+  # Image to use when building consumer
+  KEG_BASE_IMAGE: ghcr.io/simpleviewinc/tap:master
 
-  GIT_RETHEME_URL: "{{ cli.git.orgUrl }}/keg-test-consumer.git"
-
+  # Image to use when running consumer
+  KEG_IMAGE_FROM: ghcr.io/simpleviewinc/consumer:master
 
   # --- DOCKER ENV CONTEXT --- #
 
@@ -45,13 +46,16 @@ env:
 
   # Image/Container Build information
   # IMAGE and CONTAINER_NAME should be the same
-  IMAGE: keg-test-consumer
-  CONTAINER_NAME: keg-test-consumer
+  IMAGE: consumer
+  CONTAINER_NAME: consumer
   VERSION: "0.0.1"
 
   # --- KEG TEST CONSUMER ENVs --- #
   # taps can check this environment variable to determine
   # where to place the build output
   KEG_CONSUMER_BUILD_PATH: /keg/app/node_modules/@keg-hub/tap-evf-sessions
-  KEG_FROM_BASE: false
   KEG_EXEC_CMD: start
+
+  # Git tap url in github
+  GIT_APP_URL: https://github.com/simpleviewinc/keg-test-consumer.git
+  GIT_APP_BRANCH: master
