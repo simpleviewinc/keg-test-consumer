@@ -15,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@keg-hub/tap-evf-sessions": "2.5.0"
+    "@keg-hub/tap-evf-sessions": "2.6.0"
   },
   "devDependencies": {
     "@keg-hub/rga4": "0.0.3",

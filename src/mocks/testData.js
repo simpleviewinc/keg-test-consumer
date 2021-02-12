@@ -9,18 +9,22 @@ export default {
     {
       dayNumber: 1,
       date: '2020-07-17',
+      dayName: 'Day 1 - Introduction day',
     },
     {
       dayNumber: 2,
       date: '2020-07-18',
+      dayName: 'Custom day name 2',
     },
     {
       dayNumber: 3,
       date: '2020-07-19',
+      dayName: 'This is day 3',
     },
     {
       dayNumber: 4,
       date: '2020-07-20',
+      dayName: 'Day 4',
     },
   ],
   settings: {
