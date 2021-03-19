@@ -1,6 +1,7 @@
 import React, {useState, useMemo, useCallback} from 'react'
 import Sessions from '@keg-hub/tap-evf-sessions'
 import testData from './mocks/testData'
+import { EvfButton } from './mocks/evfButton'
 import { evfModalBuilder } from './mocks/evfModalBuilder'
 import { useRGA4 } from '@keg-hub/rga4'
 
@@ -45,7 +46,8 @@ export const EvfSessions = props => {
     showVersion={true}
     onSessionBookingRequest={bookingRequest}
     onSessionWaitingListRequest={waitingRequest}
-    sessionAgendaProps={testData} 
+    sessionAgendaProps={testData}
+    ButtonComponent={EvfButton}
     ModalComponent={SessionsModal}
   />
 }
