@@ -1,6 +1,6 @@
 {
   "name": "keg-test-consumer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://simpleviewinc.github.io/keg-test-consumer",
   "scripts": {
     "docker:build:consumer": "bash ./scripts/dockerConsumerBuild.sh",
@@ -15,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@keg-hub/tap-evf-sessions": "2.6.0"
+    "@keg-hub/tap-evf-sessions": "3.0.0"
   },
   "devDependencies": {
     "@keg-hub/rga4": "0.0.3",
