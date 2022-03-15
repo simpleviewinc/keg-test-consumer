@@ -1,30 +1,30 @@
 import { longText } from './text'
 
 export default {
+  alert: {
+    message: '',
+    title: '',
+    type: 'error',
+  },
   displayProperties: {
     dateFormat: 'dd/MM/yyyy', // can be "dd/MM/yyyy" | "MM/dd/yyyy" | "yyyy-MM-dd"
-    timeFormat: '12' // can be '12' or '24'
+    timeFormat: '12', // can be '12' or '24'
   },
   agendaDays: [
     {
       dayNumber: 1,
-      date: '2020-07-17',
+      date: '2021-01-29',
       dayName: 'Day 1 - Introduction day',
     },
     {
       dayNumber: 2,
-      date: '2020-07-18',
-      dayName: 'Custom day name 2',
+      date: '2021-01-30',
+      dayName: 'Day 2',
     },
     {
       dayNumber: 3,
-      date: '2020-07-19',
-      dayName: 'This is day 3',
-    },
-    {
-      dayNumber: 4,
-      date: '2020-07-20',
-      dayName: 'Day 4',
+      date: '2021-01-31',
+      dayName: 'Day 3',
     },
   ],
   settings: {
@@ -76,6 +76,23 @@ export default {
       company: 'Simpleview',
       biography: longText,
     },
+    {
+      identifier: '5',
+      firstname: 'Foo',
+      lastname: 'Bar',
+      email: 'foobar@gmail.com',
+      jobtitle: 'Engineer',
+      company: 'Google Inc',
+      biography: longText,
+    },
+    {
+      identifier: '6',
+      firstname: 'Jonny',
+      lastname: 'Jonathan',
+      email: 'jojo@gmail.com',
+      jobtitle: 'Freelancer',
+      biography: longText,
+    },
   ],
   labels: [
     {
@@ -108,6 +125,51 @@ export default {
       name: 'Breaks',
       className: 'ef-agenda-label-206',
     },
+    {
+      identifier: '7',
+      name: 'Blockchain',
+      className: 'ef-agenda-label-207',
+    },
+    {
+      identifier: '8',
+      name: 'IoT',
+      className: 'ef-agenda-label-208',
+    },
+    {
+      identifier: '9',
+      name: 'Quantum Computing',
+      className: 'ef-agenda-label-209',
+    },
+    {
+      identifier: '10',
+      name: 'Augmented Reality',
+      className: 'ef-agenda-label-210',
+    },
+    {
+      identifier: '11',
+      name: 'Virtual Reality',
+      className: 'ef-agenda-label-211',
+    },
+    {
+      identifier: '12',
+      name: 'Reality Reality',
+      className: 'ef-agenda-label-212',
+    },
+    {
+      identifier: '13',
+      name: 'Mixed Reality',
+      className: 'ef-agenda-label-213',
+    },
+    {
+      identifier: '14',
+      name: 'Robotics',
+      className: 'ef-agenda-label-214',
+    },
+    {
+      identifier: '15',
+      name: 'Data Mining',
+      className: 'ef-agenda-label-215',
+    },
   ],
   locations: [
     {
@@ -131,7 +193,23 @@ export default {
       startDateTimeLocal: '2020-08-03 09:00:00',
       endDateTimeLocal: '2020-08-03 13:30:00',
       presenterIdentifiers: [ '1', '2' ],
-      labelIdentifiers: [ '1', '2' ],
+      labelIdentifiers: [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+        '13',
+        '14',
+        '15',
+      ],
       locationIdentifier: '1',
       liveVideoUrl: 'https://us02web.zoom.us/j/1234',
       recordedVideoUrl: 'https://www.youtube.com/watch?v=21X5lGlDOfg',
@@ -184,7 +262,7 @@ export default {
     },
     {
       allowBooking: true,
-      identifier: '13',
+      identifier: '3a',
       name: 'Session on day 2, limited capacity, no waiting list',
       summary: '',
       dayNumber: 2,
@@ -198,7 +276,7 @@ export default {
       restrictToAttendeeCategories: [ '1', '2' ],
       capacity: {
         isUnlimited: false,
-        remainingPlaces: 0,
+        remainingPlaces: 3,
         isWaitingListAvailable: false,
       },
     },
@@ -245,7 +323,8 @@ export default {
     {
       allowBooking: true,
       identifier: '6',
-      name: 'Session on day 2 restricted to attendee category',
+      name:
+        'Session on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee categorySession on day 2 restricted to attendee category',
       summary: '',
       dayNumber: 2,
       startDateTimeLocal: '2020-08-04 11:00:00',
@@ -268,7 +347,7 @@ export default {
       dayNumber: 2,
       startDateTimeLocal: '2020-08-04 11:00:00',
       endDateTimeLocal: '2020-08-04 11:45:00',
-      presenterIdentifiers: [],
+      presenterIdentifiers: [ '2', '3', '4' ],
       labelIdentifiers: [],
       locationIdentifier: '2',
       liveVideoUrl: '',
@@ -284,12 +363,12 @@ export default {
       allowBooking: true,
       identifier: '8',
       name:
-        'Session on day 2 Demo 2: super long name. Something different that is very complicated to describe',
+        'Session on day 2 Demo 2: super long name. Something different that is very complicated to describesession with presenters and labels session with presenters and labels',
       summary: '',
       dayNumber: 2,
       startDateTimeLocal: '2020-08-04 11:00:00',
       endDateTimeLocal: '2020-08-04 11:30:00',
-      presenterIdentifiers: [],
+      presenterIdentifiers: [ '1', '2', '3', '4', '5', '6' ],
       labelIdentifiers: ['6'],
       locationIdentifier: '2',
       liveVideoUrl: '',
@@ -342,7 +421,7 @@ export default {
       },
     },
     {
-      allowBooking: false,
+      allowBooking: true,
       identifier: '11',
       name: 'Zerista session day 3',
       summary: 'This is a session with both presenters and labels',
@@ -364,7 +443,7 @@ export default {
       },
     },
     {
-      allowBooking: false,
+      allowBooking: true,
       identifier: '12',
       name: 'Zerista session day 3',
       summary: 'This is a session with both presenters and labels',
@@ -385,6 +464,27 @@ export default {
       price: {
         currency: 'USD',
         amount: 923.0,
+      },
+    },
+    {
+      identifier: '13',
+      name:
+        'Session with waiting list enabled and 3 remaining waiting list places',
+      summary: 'This session has a finite waiting list capacity',
+      dayNumber: 2,
+      allowBooking: true,
+      startDateTimeLocal: '2020-08-04 14:00:00',
+      endDateTimeLocal: '2020-08-04 15:30:00',
+      presenterIdentifiers: [],
+      labelIdentifiers: [],
+      liveVideoUrl: '',
+      recordedVideoUrl: '',
+      restrictToAttendeeCategories: [],
+      capacity: {
+        isUnlimited: false,
+        remainingPlaces: 1,
+        isWaitingListAvailable: true,
+        waitingListRemainingPlaces: 3,
       },
     },
   ],
@@ -415,8 +515,8 @@ export default {
       bookedTicketIdentifier: '4',
       name: 'Pepe Silvia',
       attendeeCategoryIdentifier: '1',
-      bookedDays: [ 2 ],
-      bookedSessions: [ '13' ],
+      bookedDays: [1],
+      bookedSessions: [],
     },
     {
       bookedTicketIdentifier: '5',
@@ -487,9 +587,4 @@ export default {
       displayOrder: 2,
     },
   ],
-  alert: {
-    message: '',
-    title: '',
-    type: 'error',
-  },
 }

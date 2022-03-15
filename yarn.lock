@@ -1393,22 +1393,22 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@keg-hub/jsutils@8.5.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@keg-hub/jsutils/-/jsutils-8.5.0.tgz#cc81b730b6875d889e968100bd1302e0fb22d8f4"
-  integrity sha512-aF0mLfc1o0fRdoEaAopEkwCHfEKSz+Kjfb5goSELBkPJyulRzPz+6OTRk7XDV6VXtiq8kGJomGDAsBLW7htk4Q==
+"@keg-hub/jsutils@8.4.0":
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/@keg-hub/jsutils/-/jsutils-8.4.0.tgz#e2dd2794ccc60f8c2e5ee1aa12ec6f8d9217c209"
+  integrity sha512-dKduqKAHh2AqKymyHR0boje7x8kPkTK8vkFI46OUS+Ar9tZjjMgX8CoQuOoCzvpc/pbCaINgbSQCfrcOPidQQg==
 
 "@keg-hub/rga4@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@keg-hub/rga4/-/rga4-0.0.3.tgz#1debf6369331e0f97b76cde3ba983d2c37278598"
   integrity sha512-7zLyT5EMUB5uhd7h1D9gjBJEntwePCCOxwXE0G0U4FoyN8Xfaie66Ctyq4zy4Wfbht8twARuuWwrmnO/GUMT3Q==
 
-"@keg-hub/tap-evf-sessions@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-3.1.0.tgz#cfcc0a15683f9546d9d74fd3d4593ad231b2a961"
-  integrity sha512-3ulkNaOVy+pOQq13k7LIbSgX6ilVLiTTZByd6mw9xNMAXSNpyk34sffqRxjXMZR1xjyUe4D5zMj5NKofWJbOKg==
+"@keg-hub/tap-evf-sessions@3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@keg-hub/tap-evf-sessions/-/tap-evf-sessions-3.1.3.tgz#82e56eac697a3371e49ceedf288603e40c446288"
+  integrity sha512-ulwumGmUMYG4fbihMynCTOuOwD+xvqXBonSIFIITgtdSNpYS1Ejv2grUILq4h+hnTV9Leqg/uQsY2uBg/uTcqg==
   dependencies:
-    "@keg-hub/jsutils" "8.5.0"
+    "@keg-hub/jsutils" "8.4.0"
     prop-types "15.7.2"
     react-native-web "0.14.13"
     react-redux "7.2.2"
